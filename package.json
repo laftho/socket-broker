@@ -1,0 +1,25 @@
+{
+  "name": "socket-broker",
+  "version": "1.0.0",
+  "description": "socket-broker",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laftho/socket-broker.git"
+  },
+  "author": "Thomas LaFreniere",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/laftho/socket-broker/issues"
+  },
+  "homepage": "https://github.com/laftho/socket-broker#readme",
+  "dependencies": {
+    "node-uuid": "^1.4.8"
+  },
+  "devDependencies": {
+    "mocha": "^3.5.0"
+  }
+}
