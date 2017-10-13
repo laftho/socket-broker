@@ -29,8 +29,8 @@ class Session extends Eventer {
         try {
             let event = JSON.parse(data);
 
-            if (event && event.event && event.data) {
-                this.client.trigger(event.event, event.data);
+            if (event && event.type && event.data) {
+                this.client.trigger(event.type, event.data);
             } else {
                 this.trigger("error", new Error("Malformed or null event"));
             }
@@ -41,7 +41,7 @@ class Session extends Eventer {
 
     send(event, data) {
         let evt = {
-            event: event,
+            type: event,
             data: data
         };
 
